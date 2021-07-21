@@ -1,7 +1,7 @@
 def call(String username = 'null') {
 	echo "This is shared library greeting user: ${username}"
 	pipeline {
-		enviornment {
+		envinornment {
 			user_name = "${username}"
 		}
 		agent any
