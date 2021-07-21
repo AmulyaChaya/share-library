@@ -1,5 +1,5 @@
 def call(String username = 'null', String age = 'null') {
-	echo "This is shared library sendoffUser: ${username} Age: ${age}"
+	echo "This is shared library sendoffUser: ${username}"
 	pipeline {
 		environment {
 			USER_NAME = "${username}"
@@ -9,12 +9,12 @@ def call(String username = 'null', String age = 'null') {
 		stages {
 			stage('SENDOF_USER') {
 				steps {
-					echo "Bye ${username}, Nice meeting you !"
+					echo "Bye $USER_NAME, Nice meeting you !"
 				}	
 			}
 			stage('satge2') {
 				steps {
-					echo "User Age: ${age}"	
+					echo "User Age: $Age"	
 				}		
 			}	
 		}
