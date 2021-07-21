@@ -1,15 +1,15 @@
 def call(String username = 'null') {
-	echo "This is shared library greeting user: ${username}"
+	echo "This is shared library greetUser: ${username}"
 	pipeline {
 		environment {
-			user_name = "${username}"
+			USER_NAME = "${username}"
 		}
-		agent any
+		agent any 
 		stages {
-			stage('stage1') {
+			stage('SHARED-STAGE') {
 				steps {
-					echo "Hi $user_name, how are you"
-				}
+					echo "Hi $USER_NAME, How are you !"
+				}	
 			}
 		}
 	}
