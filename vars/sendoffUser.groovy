@@ -1,4 +1,4 @@
-  def call(String username = 'null', String age = 'null') {
+def call(String username = 'null', String age = 'null') {
 	echo "This is shared library sendoffUser: ${username}"
 	pipeline {
 		environment {
