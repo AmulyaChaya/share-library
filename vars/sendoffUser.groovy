@@ -1,6 +1,6 @@
 def call(String username = 'null', String age = 'null') {
-	echo "This is shared library sendoffUser: ${username}"
-	pipeline {
+	echo "This is shared library sendoffUser: ${username} Age: ${age}"
+	/*pipeline {
 		environment {
 			USER_NAME = "$username"
 			Age = "${age}"
@@ -18,5 +18,5 @@ def call(String username = 'null', String age = 'null') {
 				}		
 			}	
 		}
-	}
+	}*/
 }
