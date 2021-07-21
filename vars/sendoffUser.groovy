@@ -1,4 +1,4 @@
-def call(String username = 'null', Int age = 27) {
+def call(String username = 'null', Int age = 0) {
   echo "This is share library welcoming: ${username}"
     pipeline {
         environment{
