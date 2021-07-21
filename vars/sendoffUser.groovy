@@ -14,7 +14,7 @@ def call(String username = 'null', String age = 'null') {
 			}
 			stage('satge2') {
 				steps {
-					echo "User Age: ${Age}"	
+					echo "User Age: ${age}"	
 				}		
 			}	
 		}
