@@ -2,8 +2,8 @@ def call(String username = 'null', String age = 'null') {
 	echo "This is shared library sendoffUser: ${username}"
 	pipeline {
 		environment {
-			USER_NAME = "${username}"
-			Age = "${age}"
+			USER_NAME = "$username"
+			USER_AGE = "$age"
 		}
 		agent any 
 		stages {
@@ -14,7 +14,7 @@ def call(String username = 'null', String age = 'null') {
 			}
 			stage('satge2') {
 				steps {
-					echo "User Age: $Age"	
+					echo "User Age: $USER_AGE"	
 				}		
 			}	
 		}
