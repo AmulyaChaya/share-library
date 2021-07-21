@@ -12,7 +12,7 @@ def call(String username = 'null', String age = 'null') {
                   echo "displaying user name $user_name"
                 }
             }
-            stage('stage2'){
+            stage('stage2') {
                 steps {
                     echo "displaying user age $age" 
                 }
