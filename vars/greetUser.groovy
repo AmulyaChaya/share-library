@@ -1,6 +1,6 @@
 def call(String username = 'null') {
 	echo "This is shared library greetUser: ${username}"
-	pipeline {
+	/*pipeline {
 		environment {
 			USER_NAME = "${username}"
 		}
@@ -12,5 +12,5 @@ def call(String username = 'null') {
 				}	
 			}
 		}
-	}
+	}*/
 }
